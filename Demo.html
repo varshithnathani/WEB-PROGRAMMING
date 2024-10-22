@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content = "Nathani Varshith">
+    <title>This is a Demo</title>
+    <style>
+        body{
+            font-size: larger;
+            font-style: oblique;
+        }
+        thead{
+            background-color: beige;
+        }
+        tbody{
+            background-color: blanchedalmond;
+        }
+        tfoot{
+            background-color: aqua;
+        }
+    </style>
+    <base href="https://amazon.in">
+</head>
+<body>
+    <!--
+    <p> Hello I am Varshith</p>
+    <h2> This is H2</h2>
+    <p>use this link for access the smartphones in amazon</p>
+    <a href="/smartphones"> Click Here</a>
+    -->
+
+    <!-- h1 to h6 -->
+    <h1> This is using h1 </h1>
+    <h2> This is using h2 </h2>
+    <h3> This is using h3 </h3>
+    <h4> This is using h4 </h4>
+    <h5> This is using h5 </h5>
+    <h6> This is using h6 </h6>
+
+    <!-- Paragraph  -->
+    <p>This is a new Paragraph</p>
+    <p>This is 2nd Paragraph</p>
+
+    <!-- Quation Marrks (" ") => <q>/<q> -->
+    <q>I will Learn Html</q>
+    
+    <!-- break -->
+    <br> <!-- next Line -->
+    <br>
+
+    <!-- Anchor tag -->
+    <a href="amazon.in">Click here</a>
+    
+    <!-- List => Ordered & unordered List -->
+
+    <!-- UnOrdered List  ===> <ul> <li></li> </ul>  -->
+    <ul type = "square">
+        <li>list 1</li>
+        <li>list 2
+            <!-- Sub list's -->
+            <ul>
+                <li>list 2-1</li>
+                <li>list 2-2
+                    <ul type = "circle">
+                        <li>list 2-2-1</li>
+                    </ul>
+                </li>
+                <li>list 2-3</li>
+            </ul>
+        </li> 
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+
+    <!-- Ordered List -->
+
+    <ol> <!-- <ol type = 'a'>  to get it like a. b. -->
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3
+            <ol>
+                <li>list 3-1</li>
+                <li>list 3-2
+                    <ol>
+                        <li>list 3-2-1</li>
+                        <li>list 3-2-2</li>
+                    </ol>
+                </li>
+                <li>list 3-3</li>
+            </ol>
+        </li>
+        <li>List 4</li>
+    </ol>
+    
+
+    <!-- Tables -->
+    <!-- We will use style for table -->
+    <table border="1">
+        <caption>Course Table</caption>
+        <thead>
+
+            <tr><td colspan="2">WIN SEM</td></tr>
+            <!-- th => is used for bold the text -->
+            <tr><th>Faculty</th><th>Course</th></tr>
+
+        </thead>
+
+        <tbody>
+            <tr><td>Varshith</td><td>Html</td><tr>
+            <tr><td rowspan="2">Shiva</td><td>OS</td></tr>
+            <tr><td>CN</td></tr>
+            <tr><td>Vishnu</td><td>DBMS</td></tr>
+        </tbody>
+
+
+        <tfoot>
+            <tr><td colspan="2"> This a footer</td></tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
