@@ -1,0 +1,80 @@
+.first{
+    font-size: 30px;
+}
+p{
+    color: rgb(54, 38, 17);
+    /*
+    font-size: 20px; 
+    */
+    /* Fixed length units */
+    /* 1 px = 1/96th of 1 in, 1 in = 2.54cm */
+    /* px, in, cm, mm, pt(1/72 1 in), pc(1 pc = 12pt) */
+
+    /* Relative lengths: em, rem, %, vw, vh, vmin, vmax */
+
+    font-size: 2em; /* 2* parent font-size. That means 2 *30=60px */
+    /* we can give 0.5em also. */
+
+}
+.p1{
+    font-size: 2em; /* in this case em will take the default font size which is 16px  */
+    /* that means 2* 16 = 32 px */
+
+}
+
+/* rem is depends on the root element */
+/* It will only consider the root element value that means only 16px */
+.p2{
+    font-size: 3rem;
+}
+
+/* percentage */
+
+.parent{
+    height: 600px;
+    width: 600px;
+    background: red;
+}
+.child1{
+    height: 50%;
+    width: 100%;
+    background: blue;
+}
+.child2{
+    height: 50%;
+    width: 100%;
+    color: aqua;
+    background: #000;
+}
+
+/* ch is the width of a monospaced chararacter VARSHITH */
+/* vw => viewport width & vh => viewport height */
+/* view port => seeing the content in devices */
+
+.second{
+    width: 50vw;
+    height: 100vh;
+    background: aqua;
+}
+
+/* vmin & vmax */
+
+/* vmin: takes the min dimension of the screen */
+.third{
+    height: 50vmin; /* here height = 50vmin that means it takes 50% of the min height of the screen */
+    width: 40vmin;
+    color: yellow;
+    background: #000;
+
+}
+/* vmax: takes the max dimension of the screen */
+.forth{
+    height: 50vmax;
+    width: 50vmax;
+    background: rebeccapurple;
+}
+.fifth{
+    height: 100vmax;
+    width: 100vmax;
+    background: red;
+}

@@ -1,0 +1,58 @@
+
+.e1{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    z-index: 3; 
+    }  
+    /* greater the z-index value will the overlap */
+    /* to use z-index we have to use the psotion else we won't get exact result */
+
+
+.e2{
+    position: absolute;
+    top: 5px;
+    left: 100px; 
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    z-index: 2;
+}/* e2 is overlaping on e1 */
+.e3{
+    position: absolute;
+    top: 250px;
+    left: 5px;
+    height: 200px;
+    width: 200px;
+    background: rgb(41, 18, 64);
+    box-shadow: 5px 5px 5px aquamarine, 10px 10px 10px gray inset ;
+    border-radius: 50%;
+}
+.e4{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    height: 100px;
+    width: 100px;
+    background: #000;
+    box-shadow: 10px 10px antiquewhite;
+}
+
+.e5{
+    position: absolute;
+    top: 500px;
+    
+    /* if i don't want the paragraph to start in the new line then i have to use the dispaly:inline; */
+
+}
+p{
+/*     display: inline;
+ */
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: aliceblue;
+}

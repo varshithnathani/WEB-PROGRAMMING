@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        table tr td{
+            border: 1px solid black;
+        }
+    </style> -->
+    <style>
+        thead{
+            background-color: azure;
+        }
+        table{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- abbrevation -->
+    <abbr title="Internet Web Programming">IWP</abbr>
+
+    <!-- Address -->
+    <h1>Welcome to my Webpage</h1>
+    <address>        
+        Nathani Varshith <br>
+        VIT AP Student <br>
+        Amaravati <br>
+        Andhra Pradesh <br>
+        India <br>
+    </address>
+
+    <h2>Thankyou for visiting my Webpage</h2>
+
+    <!-- caption -->
+    <table border="1">
+        <caption>Student Marks</caption>
+        <thead>
+            <td>Student Name</td> <td>Marks</td>
+        </thead>
+        <tbody>
+            <tr><td>Varshith</td><td>50</td></tr>
+            <tr><td>John</td><td>40</td></tr>
+            <tr><td>Shiv</td><td>60</td></tr>
+        </tbody>
+    </table>
+
+    <!-- code --> <!-- used to display the programming code -->
+    <code class="language-java">
+        import java.util.*;
+        class Main{
+            Public static void main(String[] args){
+                Scanner SC = new Scanner(System.in);
+                String str = SC.nextLine();
+                System.out.println(str);
+            }
+        }
+    </code>
+
+
+    <!-- clogroug => col -->
+    <table>
+        <caption>Using Col group</caption>
+        <colgroup>
+            <col span="2" style="background-color: antiquewhite;"> <!-- First 2 columns -->
+            <col style="background-color: aqua;">
+        </colgroup>
+
+        <tr><td>varshith</td><td>Nathani</td><td>Java</td></tr>
+        <tr><td>Ashok</td><td>Nathani</td><td>SQL</td></tr>
+        <tr><td>Ishwar</td><td>Nathani</td><td>C++</td></tr>
+    </table>
+
+    <!-- DataList -->
+    <form action="#">
+        Enter your subject
+        <input list="subjects" name="subject" id="subject"><br>
+
+        <datalist id="subjects">
+            <option value="Java">Java</option>
+            <option value="SQL">SQL</option>
+            <option value="C++">C++</option>
+            <option value="DBMS">DBMS</option>
+        </datalist>
+    </form>
+
+    <!-- Description List => dl -->
+    <dl>
+        <dd>Cars</dd>
+        <dt>Have has 4 wheels</dt>
+        <dd>Bikes</dd>
+        <dt>Bike has 3 wheels</dt>
+    </dl>
+
+    <!-- delete tag -->
+    varshith is learning <del>Java</del> Internet Web Programming
+
+    <!-- details tag -->
+    <details>
+        <summary>internet web programming</summary>
+        <p>In IWP we will learn Html, CSS, js, Angular and so on</p>
+    </details>
+
+    <!-- feildset tag --> <!-- grouing set of form elements -->
+    <form action="#">
+
+        <feildset>
+            <legend>IWP Class Student</legend>
+        <label for="username">Enter username</label>
+        <input type="text" name="username" id="username"><br>
+        <label for="password">Enter password</label>
+        <input type="password" name="password" id="password"><br>
+        </feildset>
+    </form>
+
+    <!-- figure -->
+    <figure>
+        <img src="images/CourseTableImg.jpg" alt="This is CourseTableImg">
+        <figcaption>Fig 1: Course Table </figcaption>
+    </figure>
+
+    <!-- hgrup --> <!-- head + paragraph -->
+    <hgroup>
+        <h1>This is Demo html file</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aperiam velit esse quos provident voluptates accusamus, blanditiis iure? Aperiam corrupti quibusdam, maiores et sequi repellendus repellat sit quo debitis modi?</p>
+    </hgroup>
+
+    <!-- Menu tag -->
+    <menu>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </menu>
+
+
+    <!-- meter tag -->
+    <h1>Performance of Students</h1>
+    <label for="varshith">varshith</label>
+    <meter id="s1" value="10" min="0" max="100"></meter>
+    <label for="shiv">shiv</label>
+    <meter id="s2" value="80" min="0" max="100"></meter>
+
+    <!-- optgroup -->
+    <label for="countries">select your country</label>
+    <select name="countries" id="c1">
+        <optgroup label="Asia">
+            <option value="India"> India</option>
+            <option value="Srilankha"> Sri lankha</option>
+            <option value="Nepal"> Nepal</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="US">United States</option>
+            <option value="Canda">Canada</option>
+        </optgroup>
+    </select>
+
+    <!-- noscript --> <!-- Script is not working in some time then it will work-->
+    <noscript>
+        This script is not working
+    </noscript>
+
+    <!-- sup and sub scripts -->
+    what is X <sup>2</sup> when Y <sub>2</sub> = 10.
+</body>
+</html>

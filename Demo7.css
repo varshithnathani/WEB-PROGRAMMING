@@ -1,0 +1,21 @@
+.parent{
+    height: 1000px;
+    width: 1000px;
+    background-color: aqua;
+    border:5px solid brown;
+    background-image: url(images/CourseTableImg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+/*     background-position: center; */
+    background-position-x: center ;
+    background-position-y: center;
+}
+ .child{
+    height: 300px;
+    width: 300px;
+    background-color: antiquewhite;
+    border: inherit;
+     
+}
+/* Inheriting the border prperties from the family */
+

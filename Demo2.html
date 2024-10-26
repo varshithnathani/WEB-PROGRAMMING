@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a{  /* using class id */
+            background-color: aquamarine;
+        }
+
+        /* using class id to styling purpose */
+        #a1{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- iframe -->
+    <!-- Loads another webpage in our webpage -->
+    <iframe src="https://amazon.com"height = "300" width = "300" name = "testframe" frameborder="0"></iframe>
+    <br>
+    <!-- we can use anchor tag and iframe together -->
+    <iframe src="DummyPage.html" name = "testframe2" frameborder="0"></iframe>
+    <a href="https://amazon.in"> click here </a>
+
+    <!-- div  -->  <!-- divide the contenet into multiple ways -->
+    <!-- class name can be same but id has to be unique -->
+    <div class = "a" id = "a1">
+        <!-- lorem --> <!-- gives dummy text -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex in quidem error itaque eos sequi ducimus blanditiis. Alias dolor accusantium repellendus nam culpa corporis reiciendis, porro provident repudiandae sint.</p>
+    </div>
+
+    <div class = "a" id = "a2">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum qui nostrum error ullam. Dolores nostrum optio voluptatibus deserunt veniam doloremque porro ipsam doloribus rem, assumenda quis eius rerum dolorum!
+        </p>
+    </div>
+
+
+    <!-- img -->
+    <img src="images/CourseTableImg.jpg" alt="This is a image related to the Course table" height="300" width="300">
+
+    <!-- Image as HyperLink -->
+    <a href="https://amazon.in">
+       <img src="images/CourseTableImg.jpg" alt="This is a image related to the Course table" height="300" width="300">
+    </a>
+
+
+    <!-- video -->
+    <video src="videos/DemoVideo.mp4" controls autoplay muted loop height="300" width="300"></video>
+
+    <!-- audio -->
+    <audio src="audios/DemoAudio.mp3" controls autoplay muted loop></audio>
+
+    <!-- Emeding youtube video in our website -->
+    <!-- go to youtube video
+         Click share and press emeded video
+         select the source and paste in the iframe -->
+    <iframe src="https://www.youtube.com/embed/zeY7u0vW59M?si=DEavYPZd4INNKEtX" height="300" width="300" frameborder="0"></iframe>
+
+    <!-- Forms in HTML -->
+    <form >
+        <label for="username"> Enter your username</label>
+        <input type="text" required minlength="4" maxlength="10" name ="username"><br>
+        <label for="password"> password</label>
+        <input type="password" required name="password"><br>
+
+        <!-- radio --> <!-- EX: gender -->
+        <label for="gender"> Select your gender</label>
+        <input type="radio" name="gender" value = "male" >
+        <label for="male"> Male</label><br>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <!-- checkbox --> <!-- user can select multiple boxes -->
+        <label for="subjects"> Select your subjects</label><br>
+        <input type="checkbox" name="subject1" id="subject1" value="Java">
+        <label for="Java">Java</label><br>
+        <input type="checkbox" name="subject2" id="subject2" value="SQL">
+        <label for="SQL">SQL</label><br>
+
+
+        <!-- date -->
+        <label for="Leave"> Enter Leave Date</label>
+        <input type="date" min="2024-10-26" max="2024-10-31"><br>
+
+        <!-- range -->
+        <label for="Recomedation">Select the range</label>
+        <input type="range" min="0" max="10"><br>
+
+        <!-- Email -->
+        <label for="Email">Enter your Email</label>
+        <input type="email" required><br>
+
+        <!-- dropdown -->
+        <label for="country">Select your country</label>
+        <select name="country" id="country1">
+            <option value="India">India</option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select><br>
+
+        <!-- Numbers -->
+        <label for="marks"> Enter your marks</label>
+        <input type="number" min="0" max="10"><br>
+
+        <!-- search -->
+        <label for="search">Enter text to search</label>
+        <input type="search" ><br>
+
+        <!-- submit button -->
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+    </form>
+    
+</body>
+</html>

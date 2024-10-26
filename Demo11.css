@@ -1,0 +1,51 @@
+.parent{
+    background-color: wheat;
+    height: 700px;
+    width: 500px;
+    position: relative;  /* From the postion where it is from the page */
+    top: 50px;
+
+}
+
+.child1{
+    background-color: azure;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.child2{
+    background-color: beige;
+    height: 200px;
+    width: 200px;
+/*     position: absolute; *//* Move will hapen with respect to the parent */
+   /* position: fixed;*/ /* It will get placed by the html page and it doesnot impact from the scrolloing */
+    /*position: static; */ /* If static, then top, right, left won't have any access */
+    position: sticky;  /* It will act as relative then after reach to the point then it act as fixed */
+    left: 200px;
+    top: 50px;
+
+}
+
+.child3{
+    background-color:blanchedalmond;
+    height: 200px;
+    width: 200px;
+
+}
+
+
+/* p::first-line{
+    color: yellowgreen;
+} */
+
+p::first-letter{
+    color:aqua;
+}
+/* Inserting the image before the paragraph & after the paragraph */
+p::before{
+    content: url(images/CourseTableImg.jpg);
+}
+p::after{
+    content: url(images/CourseTableImg.jpg);
+}

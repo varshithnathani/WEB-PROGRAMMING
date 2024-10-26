@@ -1,0 +1,17 @@
+img{
+    border: 2px solid blue;
+    padding: 20px; /* Space b/w the img and the border */
+    margin: 20px; /* Space outside the border */
+    float:right ; /* To get the text and image side by side */
+}
+div{
+    text-align: justify;
+    height: 200px;
+    width: 300px;
+    background-color:aqua ;
+    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+

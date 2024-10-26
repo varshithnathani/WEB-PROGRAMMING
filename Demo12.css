@@ -1,0 +1,84 @@
+p:first-child{
+    color: red;
+}
+p:last-child{
+    color: yellowgreen;
+}
+p:first-of-type{ /* First child, only element of the paragraph */
+    color: rebeccapurple;
+}
+p:last-of-type{
+    color: brown;
+}
+p:nth-child(2){
+    color: rgb(10, 107, 107);
+}
+p:nth-child(odd){
+    color:violet;
+}
+p:nth-child(2n){
+    color: green;
+}
+p:nth-child(4n-1){
+    color: aquamarine;
+}
+p:nth-last-child(3){
+    color: red;
+}
+p:only-child{
+    color: rgb(55, 37, 72);
+}
+p:empty{
+    height: 100px;
+    width: 100px;
+    background: #000;
+
+}
+
+input[type=text]:required{
+    background: yellowgreen;
+}
+input[type=text]:optional{
+    background: #000;
+}
+input[type=text]:disabled{
+    background: rebeccapurple;
+}
+input[type=text]:focus{
+    background: red;
+}
+
+input[type=radio]:checked{
+    height: 100px;
+    width: 100px;
+}
+
+/* Change color when ever the cursor touch the element  */
+.alpha{
+    height: 200px;
+    width: 200px;
+    background: turquoise;
+}
+
+.alpha:hover{
+    background: yellow;
+}
+
+/* root means complete html page */
+:root{
+    background: #000;
+}
+
+a{
+    font-size: 40px;
+}
+a:link{ /* unvisted link will be colored  */
+    color: antiquewhite;
+}
+a:hover{
+    background: aqua;
+}
+
+a:visited{
+    color: green;
+}

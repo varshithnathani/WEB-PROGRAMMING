@@ -1,0 +1,65 @@
+#t1{
+    resize: both; /* use vertical or horigental for specific */
+}
+header{
+    background-color: black;
+    width:100% ;
+    height: 100%;
+    color: white;
+    text-align: right;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+    background-color: aqua;
+    border-right-style: solid ;
+}
+
+nav ul li:hover{
+    background-color: beige;
+}
+section{
+    height: 600px;
+    width: 600px;
+    background-color: bisque;
+    position: relative;
+    top: 50px;
+}
+
+.a1{
+    background-color: aquamarine;
+    height: 200px;
+    width: 100%;
+
+}
+.a2{
+    background-color: red;
+    height: 200px;
+    width: 100%;
+    
+}.a3{
+    background-color: gold;
+    height: 200px;
+    width: 100%;
+    
+}
+
+aside{
+    background-color: aliceblue;
+    height: 600px;
+    width: 200px;
+    position: absolute;
+    left: 600px;
+    top: 320px;
+}
+
+footer{
+    background-color: azure;
+    color:black ;
+    position: relative;
+    top: 50px;
+}

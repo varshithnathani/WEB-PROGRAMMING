@@ -1,0 +1,47 @@
+div{
+    height: 300px;
+    width: 300px;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* Text Styling */
+    color: brown;
+/*     text-decoration: overline;
+ */    
+    background-color: aqua;
+    /*
+    text-align: justify;
+    text-transform: capitalize;
+    /* Text Spacing */ 
+    /*
+    text-indent: 35px; /* First word will have space at begining */
+/*     letter-spacing: 12px; /* space b/w letter */
+    /*
+    word-spacing: 10px; /* Space b/w words */
+    /*
+    line-height: 40px;
+    */
+
+    /* Padding */
+    /* it gives some space around your text around the element */
+
+    padding: 50px;
+
+    /* border */
+/*     border:5px solid brown;*/
+    /* solid, dotted */
+    /*
+    border-style: solid ;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-right-color: bisque;
+    */
+
+    /*
+    border-radius: 25%;
+    */
+    border-radius: 15px 50px;
+
+    
+
+}
