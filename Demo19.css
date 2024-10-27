@@ -1,0 +1,39 @@
+body{
+    color: rgb(81, 57, 29);
+    font-size: x-large;
+}
+
+/* Any device with a screen */
+/* @media screen and (min-width:500px) and (min-height:500px){ */
+
+    /* For using min-width or min-height then we have use min-width , min-height */
+
+    /* if the min width is exceeds 500px then  it will change to red color */
+
+    /* Similarly we have max-width, min-height, max-height */
+/* 
+    body{
+        color: red;
+        background-color: aqua;
+    }
+} */
+
+/* Even we can use Orientation: landscape or Orientation: portrait */
+
+/* Other than screen what we can mention */
+
+/* @media print{
+    body{
+        color: brown;
+    }
+} */
+
+
+/* Here all means it is applicable for all */
+/* @media all{
+    body{
+        color: brown;
+    }
+} */
+
+

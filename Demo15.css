@@ -1,0 +1,21 @@
+/* Multi column layout */
+body{
+    column-count: 3;
+    column-rule: 2px solid black;
+    column-gap: 20px;
+    text-align: justify;
+    background-color: blanchedalmond;
+}
+
+h1{
+    column-span: all;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+img{
+    float: left;
+    margin: 10px;
+    height: 200px;
+    width: 180px;
+}

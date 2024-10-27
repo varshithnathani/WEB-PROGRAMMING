@@ -1,0 +1,105 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px; 
+    grid-template-rows: 100px 100px 100px 100px 100px ; 
+    /* grid-template-rows: repeat(5,100px); */
+    /* we can provide the repeat - how many times & size */
+    /* Even we can go with fractions also */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ifr 1fr 1fr 1fr; */
+
+    /* column-gap: 10px; */ /* gaps b/w the columns */
+    /* row-gap: 10px; */
+
+
+    justify-content: left;
+    /* align-items: center; */
+    /* align items to the end of the specific row */
+
+    /* Over flowing cases- purpose */
+    grid-auto-flow: rows;
+    grid-auto-rows:100px;
+
+
+}
+
+/* .container>div:nth-child(odd){
+    background-color:yellow ;
+}
+.container>div:nth-child(even){
+    background-color: red;
+} */
+
+.container>div:nth-child(1){
+    /* grid-column-start: 1;
+    grid-column-end:6 ; */
+
+    /* instead of using the grid-column-start and grid-column-end we can us e grid-column: 1/6 that means starts at col-1 and ends at col-6  */
+    /* Same we can use for rows also */
+    grid-column: 1/6;
+    background-color: aqua;
+
+    /* align-self: flex-start;
+
+    justify-self: end; */
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+    border-bottom: 4px solid black;
+}
+
+.container>div:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+   /*  grid-row-start: 2;
+    grid-row-end: 5; */
+    grid-row: 2/5;
+    background-color: blue;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+
+}
+
+.container>div:nth-child(3){
+    /* grid-column-start: 3;
+    grid-column-end:6 ;
+
+    grid-row-start: 2;
+    grid-row-end: 5; */
+
+    /* We can use grid-area in place of grid-column and grid-row */
+    grid-area: 2/3/5/6;
+    /* Row start, col start, row end, col end */
+
+    background-color: gray;
+    border-right: 4px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+
+}
+
+.container>div:nth-child(4){
+    /* grid-column-start: 1;
+    grid-column-end:6 ; */
+    grid-column: 1/span 5;
+    /* span 5 means from start take 5 places */
+    background-color: aquamarine;
+
+    border-top: 4px solid;
+    text-align: center;
+    padding-top: 20px;
+    font-size: x-large;
+}
+
+
+.container>div:nth-child(5){
+    background-color: red;
+}
+
+.container>div:nth-child(6){
+    background-color: blueviolet;
+}

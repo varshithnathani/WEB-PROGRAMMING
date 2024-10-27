@@ -1,0 +1,80 @@
+.parent{
+    font-size: 1rem;
+    height: 500px;
+    width: 100%;
+    background: lightcyan;
+
+    display: flex;
+   /*  flex-direction: row;
+    justify-content: space-around; */
+
+    /* Allign content using cross axis */
+
+   /*  align-items: last baseline; */
+
+   /* Flix direction column */
+
+   /* flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center; */
+
+
+   /* Flex Wrap */
+   
+   /* flex-wrap: wrap; */ /* It will wrap the data inside the container */
+   /* The extra items will be wrap when we use the wrap */
+  /*  justify-content: space-around; */
+   flex-flow: row wrap;
+   /* The direction of the data and whether the data is need to wrap inside the flexbox or not */
+   /* align-content: space-evenly; */
+   /* align content will only work when wrap is enable. we can align the multiple rows across the crossaxis */
+
+   /* align-items: flex-start; */
+}
+
+
+/* Order, align-self, flex-basis, flex-grow, flex-shrink, flex */
+
+.child1{
+    height: 160px;
+    width: 30%;
+    background-color: aquamarine;
+    /* order: 3; */
+    /* align-self: center; */
+    /* align-self will overwrite the align-items in the parent class and assign the new postion */
+    /* flex-basis: 100px; */
+    /* initail width of the child, which we start of  */
+    /* Flex-grow is usedfo rdistributing the remaining width accross the child nodes  */
+    /* flex-grow: 1; */
+
+
+    flex: 1 0 300px;
+
+}
+.child2{
+    height: 100px;
+    width:  50% ;
+    background-color: beige;
+    /* order:1; */
+    /* flex-basis: 100px;
+    flex-grow: 2; */
+
+    /* flex-shrink: 5; */
+    /* This will shrink faster than the other child elements */
+
+
+    /* flex is the combination of flex-basis, flex-grow, flex-shrink */
+    flex: 2 0 200px;
+}
+.child3{
+    height: 120px;
+    width: 20%;
+    background: blueviolet;
+    /* order: 2; */
+    /* flex-basis: 100px;
+    flex-grow: 2; */
+
+    flex: 2 0 200px; /* flex-grow, flex-shrink, flix-basis */
+}
+
+

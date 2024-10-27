@@ -1,0 +1,36 @@
+/* Combinators in CSS */
+/* descendent selectors */
+nav ul li a{
+    color: yellowgreen;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 10px;
+    float: left;
+    
+}
+
+nav ul li a:hover{
+    background-color: aqua ;
+}
+
+/* Child selectors */
+
+div>p{
+    color: aquamarine;
+}
+
+/* adjecent sibiling selector */
+
+p+h1{
+    color: blueviolet;
+}
+
+/* gendral sibiling selector */
+
+p~h1{
+    color: bisque;
+}
+
+

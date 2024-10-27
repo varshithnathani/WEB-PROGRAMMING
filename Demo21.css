@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+.container>div:nth-child(1){
+    flex: 25%;
+    background-color: bisque;
+    padding: 30px;
+    color:chocolate
+}
+
+.container>div:nth-child(2){
+    flex: 50%;
+    background-color: blanchedalmond;
+
+}
+
+.container>div:nth-child(3){
+    flex:25%;
+    background-color: bisque;
+}
+
+@media screen and (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .container>div:nth-child(2){
+        background-color: red;
+    }
+}
