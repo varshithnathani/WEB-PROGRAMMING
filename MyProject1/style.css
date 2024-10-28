@@ -1,0 +1,124 @@
+body{
+    background-color: #E8F5E9;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-left: 2px solid gray;
+    border-right: 2px solid grey;
+
+}
+
+.mech:hover{
+    background-color: aliceblue;
+}
+
+.ele:hover{
+    background-color: aliceblue;
+}
+
+.fitter:hover{
+    background-color: aliceblue;
+}
+.header{
+    grid-column: span 3;
+    text-align: center;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    background-color: darkgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+
+}
+
+.Fitter{
+    text-align: center;
+    font-size: larger;
+    border-right: 1.5px solid gray;
+    border-bottom: 1.5px solid gray;
+}
+
+
+.intro{
+    padding-left: 10px;
+    text-decoration:dotted;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-right: 1.5px solid gray;
+}
+
+
+.para{
+    padding-top: 5px;
+    text-indent: 40px;
+    text-align: justify;
+    padding-left: 30px;
+    border-right: 1.5px solid gray;
+    padding-right: 10px;
+}
+
+.para img{
+    padding-top: 5px;
+    height: 100%;
+    width: 100%;
+}
+.Eligibility{
+    font-size: larger;
+    text-align: center;
+    grid-column: span 3;
+    padding-top: 20px;
+    text-decoration:double;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    border-top: 1.5px solid gray;
+
+}
+
+.item1 ul li{
+    grid-column: span 3;
+    text-align: left;
+    list-style: none;
+    padding-left: 60px;
+    
+}
+
+.onlyEli{
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+.Electrical{
+    text-align: center;
+    font-size: larger;
+    border-bottom: 1.5px solid gray;
+    border-right: 1.5px solid gray;
+}
+
+.Mechanic{
+    text-align: center;
+    font-size: larger;
+    border-bottom: 1.5px solid gray;
+    border-right: 1.5px solid gray;
+}
+
+.footer{
+    border-bottom: 2px solid gray;    
+    border-left: 2px solid gray;
+    border-right: 2px solid gray;
+}
+.cont{
+    font-size: larger;
+    text-align: center;
+}
+.contactinfo{
+    padding-left: 100px;
+}
+
+.contactinfo:hover{
+    font-size: x-large;
+}
+
+
