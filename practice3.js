@@ -107,3 +107,56 @@ if (!a1>a2){ // if a1 is not greater than a2
     console.log("a1 is not greater")
 }
 
+
+// switch case in java
+let x = 4;
+switch(x){
+    case 1:
+        console.log("One");
+        break;
+    case 4:
+        console.log("fourth");
+        break;
+    default:
+        console.log("nothing matched");
+}
+
+
+let cy = "varshtih";
+switch(x){
+    case "Nathani":
+        console.log("One");
+        break;
+    case "varshith":
+        console.log("forth");
+        break;
+    default:
+        console.log("nothing matched");
+}
+
+
+// nested switch case
+let nhi =2;
+switch(nhi){
+    case 2:
+        console.log("It is true");
+        let k = 3;
+        switch(k){
+            case 2:
+                console.log("2 from nested");
+                break;
+            case 3:
+                console.log("3 from nested switch");
+                break;
+            default:
+                console.log("End of nested switch");
+            
+        }
+        break;
+    case 4:
+        console.log("fourth case");
+        break;
+    default:
+        console.log("Learned nested Switch case");
+        break;
+}
